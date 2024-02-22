@@ -1,0 +1,60 @@
+.icon-one {
+    width: 150px;
+    height: 150px;
+}
+
+.icon-two {
+    width: 150px;
+    height: 150px;
+}
+
+.icon-three {
+    width: 150px;
+    height: 150px;
+}
+
+.icon-four {
+    width: 150px;
+    height: 150px;
+}
+
+.personal-image {
+    width: 320px;
+    height: 320px;
+}
+
+.game-icon-one {
+    height: 100px;
+}
+
+.game-icon-two {
+    height: 120px;
+}
+
+.game-icon-three {
+    height: 50px;
+}
+
+.gamex-one, .gamex-two, .gamex-three, .gamex-four, .gamex-five, .gamex-six {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 20));
+}
+
+.carousel-indicators {
+  li {
+    background-color: white;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 20));
+  }
+  .active {
+    background-color: white;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 20));
+  }
+}

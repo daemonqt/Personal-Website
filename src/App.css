@@ -6,6 +6,22 @@
   height: 100%;
   background-size: cover;
   background-image: url(./Pics/bg.svg);
-  filter: blur(3px);
+  /* filter: blur(3px); */
   z-index: -1;
+}
+
+html, body {
+  height: 100%;
+}
+
+.app-container {
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.main-container {
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
 }

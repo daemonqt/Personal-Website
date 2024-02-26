@@ -346,63 +346,61 @@ function About() {
     const [achievementsModalShow, setAchievementsModalShow] = React.useState(false);
 
     return (
-        <div>
-            <Container className="mt-5" fluid>
-                <Row>
-                    <h1 style={{color: 'white', textAlign: 'center'}}>ABOUT ME</h1>
-                </Row>
-                <Row className="mt-5">
-                </Row>
-                <Row className="mt-5">
-                    <Col style={{textAlign: 'center', alignSelf: 'center'}}>
-                        <Button variant="outline-info" onClick={() => setPersonalModalShow(true)}>
-                        <center><Image className="icon-one" src={one}></Image></center>
-                        <h4 className="mt-2" style={{color: 'white'}}>Personal Info</h4>
-                        </Button>
-                        
-                        <PersonalModal
-                            show={personalModalShow}
-                            onHide={() => setPersonalModalShow(false)}
-                        />
-                    </Col>
-                    <Col style={{textAlign: 'center', alignSelf: 'center'}}>
-                        <Button variant="outline-danger" onClick={() => setSkillsModalShow(true)}>
-                        <center><Image className="icon-two" src={two}></Image></center>
-                        <h1> </h1>
-                        <h4 style={{color: 'white'}}>Skills</h4>
-                        </Button>
-                        <SkillsModal
-                            show={skillsModalShow}
-                            onHide={() => setSkillsModalShow(false)}
-                        />
-                    </Col>
-                    <Col style={{textAlign: 'center', alignSelf: 'center'}}>
-                        <Button variant="outline-warning" onClick={() => setHobbiesModalShow(true)}>
-                        <center><Image className="icon-three" src={three}></Image></center>
-                        <h1> </h1>
-                        <h4 style={{color: 'white'}}>Hobbies</h4>
-                        </Button>
-                        <HobbiesModal
-                            show={hobbiesModalShow}
-                            onHide={() => setHobbiesModalShow(false)}
-                        />
-                    </Col>
-                    <Col style={{textAlign: 'center', alignSelf: 'center'}}>
-                        <Button variant="outline-success" onClick={() => setAchievementsModalShow(true)}>
-                        <center><Image className="icon-four" src={four}></Image></center>
-                        <h1> </h1>
-                        <h4 style={{color: 'white'}}>Achievements</h4>
-                        </Button>
-                        <AchievementsModal
-                            show={achievementsModalShow}
-                            onHide={() => setAchievementsModalShow(false)}
-                        />
-                    </Col>
-                </Row>
-                <Row className="mt-5">
-                </Row>
-            </Container>
-        </div>
+        <Container className="center">
+            <Row>
+                <h1 style={{color: 'white', textAlign: 'center'}}>ABOUT ME</h1>
+            </Row>
+            <Row className="mt-5">
+            </Row>
+            <Row className="mt-5">
+                <Col style={{textAlign: 'center', alignSelf: 'center'}}>
+                    <Button variant="outline-info" onClick={() => setPersonalModalShow(true)}>
+                    <center><Image className="icon-one" src={one}></Image></center>
+                    <h4 className="mt-2" style={{color: 'white'}}>Personal Info</h4>
+                    </Button>
+                    
+                    <PersonalModal
+                        show={personalModalShow}
+                        onHide={() => setPersonalModalShow(false)}
+                    />
+                </Col>
+                <Col style={{textAlign: 'center', alignSelf: 'center'}}>
+                    <Button variant="outline-danger" onClick={() => setSkillsModalShow(true)}>
+                    <center><Image className="icon-two" src={two}></Image></center>
+                    <h1> </h1>
+                    <h4 style={{color: 'white'}}>Skills</h4>
+                    </Button>
+                    <SkillsModal
+                        show={skillsModalShow}
+                        onHide={() => setSkillsModalShow(false)}
+                    />
+                </Col>
+                <Col style={{textAlign: 'center', alignSelf: 'center'}}>
+                    <Button variant="outline-warning" onClick={() => setHobbiesModalShow(true)}>
+                    <center><Image className="icon-three" src={three}></Image></center>
+                    <h1> </h1>
+                    <h4 style={{color: 'white'}}>Hobbies</h4>
+                    </Button>
+                    <HobbiesModal
+                        show={hobbiesModalShow}
+                        onHide={() => setHobbiesModalShow(false)}
+                    />
+                </Col>
+                <Col style={{textAlign: 'center', alignSelf: 'center'}}>
+                    <Button variant="outline-success" onClick={() => setAchievementsModalShow(true)}>
+                    <center><Image className="icon-four" src={four}></Image></center>
+                    <h1> </h1>
+                    <h4 style={{color: 'white'}}>Achievements</h4>
+                    </Button>
+                    <AchievementsModal
+                        show={achievementsModalShow}
+                        onHide={() => setAchievementsModalShow(false)}
+                    />
+                </Col>
+            </Row>
+            <Row className="mt-5">
+            </Row>
+        </Container>
     );
 
 }

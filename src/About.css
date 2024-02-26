@@ -58,3 +58,15 @@
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 20));
   }
 }
+
+.center{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 90vh;
+    overflow: auto;
+    flex-direction: column;
+}

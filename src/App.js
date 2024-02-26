@@ -14,7 +14,7 @@ import Contact from "./Contact";
 
 function App() {
   return (
-    <div className="app-container" fluid>
+    <div className="app-container">
       <div className="background-layer"fluid></div>
       <Router>
 
@@ -30,16 +30,14 @@ function App() {
           </Container>
         </Navbar>
 
-        <Container fluid>
-            <Col>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/education" element={<Education />}/>
-                <Route path="/contact" element={<Contact />}/>
-              </Routes>
-            </Col>
+        <Container className="main-container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />}/>
+              <Route path="/about" element={<About />}/>
+              <Route path="/education" element={<Education />}/>
+              <Route path="/contact" element={<Contact />}/>
+            </Routes>
         </Container>
       </Router>
     </div>

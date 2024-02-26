@@ -1,0 +1,11 @@
+.center{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 90vh;
+    overflow: auto;
+    flex-direction: column;
+}

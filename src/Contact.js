@@ -8,47 +8,41 @@ import Email from './Pics/contact/gmail.png';
 import Fb from './Pics/contact/fb.png';
 import Twit from './Pics/contact/twit.png';
 import Phone from './Pics/contact/num.png';
+import Git from './Pics/contact/git.png';
+
+import "./Contact.css"
 
 function Contact() {
   
     return (
-        <div>
-            <Container className="mt-5" fluid>
-                <Row>
-                    <h1 style={{color: 'white', textAlign: 'center'}}>CONTACTS</h1>
-                </Row>
-                <Row className="mt-5">
-                    <Col className="d-flex">
-                        <Row className="mt-3" style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
-                            <Image src={Email} style={{ width: '50%' }}/>
-                            <h5 className="mt-3" style={{color: "white"}}>Email:</h5>
-                            <h6 className="mt-1" style={{color: "white"}}>plascano@gbox.ncf.edu.ph</h6>
-                        </Row>
-                    </Col>
-                    <Col className="d-flex">
-                        <Row className="mt-3" style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
-                            <Image src={Fb} style={{ width: '50%' }}/>
-                            <h5 className="mt-3" style={{color: "white"}}>Facebook:</h5>
-                            <h6 className="mt-1" style={{color: "white"}}>https://www.facebook.com/PauloLascanoSmith01/</h6>
-                        </Row>
-                    </Col>
-                    <Col className="d-flex">
-                        <Row className="mt-3" style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
-                            <Image src={Twit} style={{ width: '50%' }}/>
-                            <h5 className="mt-3" style={{color: "white"}}>Twitter:</h5>
-                            <h6 className="mt-1" style={{color: "white"}}>https://www.twitter.com/smith_lascano</h6>
-                        </Row>
-                    </Col>
-                    <Col className="d-flex">
-                        <Row className="mt-3" style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
-                            <Image src={Phone} style={{ width: '50%' }}/>
-                            <h5 className="mt-3" style={{color: "white"}}>Phone No.:</h5>
-                            <h6 className="mt-1" style={{color: "white"}}>+639369388861</h6>
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+        <Container className="center">
+            <Row>
+                <h1 style={{color: 'white', textAlign: 'center'}}>CONTACTS</h1>
+            </Row>
+            <Row className="mt-5">
+                <Col className="glassmorphism">
+                    <Row className="mt-3" style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
+                        <h4 style={{color: "white"}}><Image src={Git} style={{ width: '50px' }}/> github.com/daemonqt</h4>
+                    </Row>
+                
+                    <Row style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
+                        <h4 style={{color: "white"}}><Image src={Email} style={{ width: '50px' }}/> plascano@gbox.ncf.edu.ph</h4>
+                    </Row>
+                
+                    <Row style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
+                        <h4 style={{color: "white"}}><Image src={Fb} style={{ width: '50px' }}/> facebook.com/PauloLascanoSmith01</h4>
+                    </Row>
+                
+                    <Row style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
+                        <h4 style={{color: "white"}}><Image src={Twit} style={{ width: '50px' }}/> twitter.com/smith_lascano</h4>
+                    </Row>
+                
+                    <Row style={{textAlign: 'center', alignSelf: 'center', justifyContent: "center"}}>
+                        <h4 style={{color: "white"}}><Image src={Phone} style={{ width: '50px' }}/> +639369388861</h4>
+                    </Row>
+                </Col>
+            </Row>
+        </Container>
     );
 
 }

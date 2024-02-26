@@ -1,6 +1,10 @@
 .home-image {
-    height: 600px;
-    /* align-self: center; */
+    width: 80%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
 }
 
 .text-container {
@@ -19,5 +23,16 @@
 .description {
     font-size: 1.5rem;
     color: white;
- }
-  
+}
+
+.center{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 90vh;
+    overflow: auto;
+    flex-direction: row;
+}
